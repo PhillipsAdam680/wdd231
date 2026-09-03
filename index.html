@@ -1,11 +1,134 @@
-<!DOCTYPE htmL>
-<html Lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WDD 131</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="WDD 231 course homepage featuring web development coursework and certificate progress."
+    >
+    <meta name="author" content="Adam Phillips">
+
+    <title>WDD 231 | Adam Phillips</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231 - Adam Phillips</h1>
-</body> 
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Site logo" width="50" height="50">
+
+            <span>Adam Phillips</span>
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="top-sections">
+
+            <section class="course-work">
+                <h2>About me</h2>
+
+                <ul>
+                    <li>WDD 231 - Web Frontend Development I</li>
+                    <li>Additional coursework will be added here.</li>
+                </ul>
+            </section>
+
+            <section class="location">
+                <h2>Adam Phillips</h2>
+
+                <img
+                    src="images/profile.jpg"
+                    alt="A location or personal course homepage image"
+                    width="400"
+                    height="300"
+                >
+
+            </section>
+
+        </div>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="course-filters">
+                <button id="all" type="button">All</button>
+                <button id="wdd" type="button">WDD</button>
+                <button id="cse" type="button">CSE</button>
+            </div>
+
+            <div id="course-cards"></div>
+
+            <p>
+                Total Credits:
+                <span id="total-credits">0</span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+            <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+            >
+                LinkedIn
+            </a>
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Adam Phillips | United States
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
 </html>
