@@ -186,7 +186,7 @@ h1 {
 
     background-color: var(--card-color);
 
-    box-shadow: var(--shadow);
+
 }
 
 .member-card img {
@@ -299,7 +299,7 @@ footer {
 
     overflow: hidden;
 
-    clip: rect(0, 0, 0, 0);
+
 
     white-space: nowrap;
 
