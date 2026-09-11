@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Red Cliffs Coffee Company",
+            "address": "145 Main Street, Washington, UT 84780",
+            "phone": "(435) 555-1010",
+            "website": "https://example.com",
+            "image": "red-cliffs-coffee.webp",
+            "membership": 2,
+            "description": "A locally owned coffee shop serving drinks, pastries, and light meals."
+        },
+        {
+            "name": "Desert Trail Outfitters",
+            "address": "72 Telegraph Street, Washington, UT 84780",
+            "phone": "(435) 555-1020",
+            "website": "https://example.com",
+            "image": "desert-trail.webp",
+            "membership": 3,
+            "description": "Outdoor equipment and supplies for hiking and exploring southern Utah."
+        },
+        {
+            "name": "Washington Family Dental",
+            "address": "315 Green Springs Drive, Washington, UT 84780",
+            "phone": "(435) 555-1030",
+            "website": "https://example.com",
+            "image": "family-dental.webp",
+            "membership": 1,
+            "description": "Family dental care serving Washington and surrounding communities."
+        },
+        {
+            "name": "Red Rock Realty",
+            "address": "822 Buena Vista Boulevard, Washington, UT 84780",
+            "phone": "(435) 555-1040",
+            "website": "https://example.com",
+            "image": "red-rock-realty.webp",
+            "membership": 3,
+            "description": "Residential and commercial real estate services in southern Utah."
+        },
+        {
+            "name": "Cottonwood Bakery",
+            "address": "54 Main Street, Washington, UT 84780",
+            "phone": "(435) 555-1050",
+            "website": "https://example.com",
+            "image": "cottonwood-bakery.webp",
+            "membership": 2,
+            "description": "Fresh breads, pastries, cakes, and locally inspired desserts."
+        },
+        {
+            "name": "Southern Utah Tech Solutions",
+            "address": "410 Commerce Drive, Washington, UT 84780",
+            "phone": "(435) 555-1060",
+            "website": "https://example.com",
+            "image": "tech-solutions.webp",
+            "membership": 1,
+            "description": "Computer repair, networking, and technology support for local businesses."
+        },
+        {
+            "name": "Coral Canyon Fitness",
+            "address": "960 Coral Canyon Boulevard, Washington, UT 84780",
+            "phone": "(435) 555-1070",
+            "website": "https://example.com",
+            "image": "coral-canyon-fitness.webp",
+            "membership": 2,
+            "description": "A community fitness center offering classes, equipment, and personal training."
+        }
+    ]
+}

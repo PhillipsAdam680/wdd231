@@ -1,0 +1,313 @@
+:root {
+    --primary-color: #16324f;
+    --secondary-color: #2f6690;
+    --accent-color: #d9e8f5;
+
+    --background-color: #f7f9fb;
+    --card-color: #ffffff;
+
+    --text-color: #1f2933;
+    --light-text: #ffffff;
+
+    --border-color: #d4dce4;
+
+    --shadow: 0 3px 10px rgb(0 0 0 / 12%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.site-brand img {
+    width: 60px;
+    height: 60px;
+}
+
+.site-brand div {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.site-subtitle {
+    font-size: 0.85rem;
+}
+
+.menu-button {
+    padding: 0.5rem;
+
+    border: 0;
+
+    font-size: 2rem;
+    color: white;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: none;
+
+    background-color: #0d2235;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+
+    padding: 1rem;
+
+    color: var(--light-text);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+/* MAIN */
+
+main {
+    width: min(94%, 1200px);
+
+    margin: 0 auto;
+    padding: 1.5rem 0 3rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* DIRECTORY BUTTONS */
+
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    margin: 1.5rem 0;
+}
+
+.view-button {
+    padding: 0.7rem 1.25rem;
+
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+
+    color: var(--primary-color);
+    font-weight: 700;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.view-button:hover,
+.view-button.active {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* GRID VIEW */
+
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.member-card {
+    overflow: hidden;
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    background-color: var(--card-color);
+
+    box-shadow: var(--shadow);
+}
+
+.member-card img {
+    display: block;
+
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 1.25rem;
+}
+
+.member-info h2 {
+    margin-top: 0;
+
+    color: var(--primary-color);
+}
+
+.member-info address {
+    margin: 1rem 0;
+
+    font-style: normal;
+}
+
+.membership {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+/* LIST VIEW */
+
+.members-list {
+    display: block;
+}
+
+.members-list .member-card {
+    margin-bottom: 0;
+
+    border: 0;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+.members-list .member-card:nth-child(even) {
+    background-color: var(--accent-color);
+}
+
+.members-list .member-card img {
+    display: none;
+}
+
+.members-list .member-info {
+    padding: 1rem;
+}
+
+.members-list .member-info p {
+    margin: 0.4rem 0;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 2rem 1rem;
+
+    color: var(--light-text);
+    background-color: var(--primary-color);
+}
+
+.footer-content {
+    display: grid;
+    gap: 2rem;
+
+    width: min(100%, 1200px);
+
+    margin: 0 auto;
+}
+
+.footer-contact h2 {
+    font-size: 1rem;
+}
+
+.footer-content p {
+    margin: 0.4rem 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+}
+
+/* ACCESSIBILITY */
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+.error-message {
+    padding: 2rem;
+
+    text-align: center;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Directory | Washington Area Chamber of Commerce</title>
+
+    <meta
+        name="description"
+        content="Explore businesses and organizations that are members of the Washington Area Chamber of Commerce."
+    >
+    <meta name="author" content="Adam Phillips">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Washington Area Chamber of Commerce">
+    <meta
+        property="og:description"
+        content="Discover local businesses and Chamber of Commerce members in the Washington, Utah area."
+    >
+    <meta
+        property="og:image"
+        content="https://YOUR-USERNAME.github.io/wdd231/chamber/images/chamber-social.webp"
+    >
+    <meta
+        property="og:url"
+        content="https://YOUR-USERNAME.github.io/wdd231/chamber/directory.html"
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="index.html" class="site-brand">
+            <img
+                src="images/chamber-logo.webp"
+                alt="Washington Area Chamber of Commerce logo"
+                width="80"
+                height="80"
+            >
+
+            <div>
+                <span class="site-name">Washington Area</span>
+                <span class="site-subtitle">Chamber of Commerce</span>
+            </div>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+    </div>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Business Directory</h1>
+
+    <section class="directory-controls">
+        <h2 class="visually-hidden">Directory Display Options</h2>
+
+        <button id="grid-button" class="view-button active">
+            Grid
+        </button>
+
+        <button id="list-button" class="view-button">
+            List
+        </button>
+    </section>
+
+    <section
+        id="members"
+        class="members-grid"
+        aria-label="Chamber members"
+    >
+        <!-- Member cards will be generated with JavaScript -->
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+
+        <section class="footer-contact">
+            <h2>Washington Area Chamber of Commerce</h2>
+
+            <p>Washington, Utah</p>
+            <p>info@washingtonchamber.org</p>
+            <p>(435) 555-1234</p>
+        </section>
+
+        <section class="social-links">
+            <h2 class="visually-hidden">Social Media</h2>
+
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </section>
+
+        <section class="development-info">
+            <h2 class="visually-hidden">Development Information</h2>
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Washington Area Chamber of Commerce
+            </p>
+
+            <p>Adam Phillips</p>
+            <p>WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+        </section>
+
+    </div>
+</footer>
+
+</body>
+</html>
