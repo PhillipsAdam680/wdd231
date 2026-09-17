@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 1rem 1.5rem;
+    }
+
+    /* HERO */
+
+    .hero-content {
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        max-width: 500px;
+        border-radius: 5px;
+    }
+
+    /* HOME INFORMATION */
+
+    .home-info {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    /* SPOTLIGHTS */
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-links {
+        margin: 0;
+    }
+}

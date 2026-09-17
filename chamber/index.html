@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Chamber of Commerce home page featuring local businesses, events, weather, and community information.">
+    <meta name="author" content="Adam Phillips">
+
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:description" content="Discover local businesses, events, weather, and community opportunities.">
+    <meta property="og:image" content="https://PhillipsAdam680.github.io/wdd231/chamber/images/chamber-social.webp">
+    <meta property="og:url" content="https://PhillipsAdam680.github.io/wdd231/chamber/">
+
+    <title>Home | Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="site-brand">
+        <img src="images/chamber-logo.webp"
+             alt="Chamber of Commerce logo"
+             width="75"
+             height="75">
+
+        <div>
+            <span>Chamber of Commerce</span>
+            <p>Supporting Our Community</p>
+        </div>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+
+    <nav id="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Chamber of Commerce</h1>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="images/chamber-hero.webp"
+             alt="Local community and businesses"
+             width="1200"
+             height="500">
+
+        <div class="hero-content">
+            <h2>Building a Stronger Community</h2>
+            <p>Connect with local businesses and discover opportunities in our community.</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+    </section>
+
+    <!-- HOME INFORMATION -->
+    <section class="home-info">
+
+        <!-- EVENTS -->
+        <section class="card events">
+            <h2>Events</h2>
+
+            <div class="event">
+                <h3>Community Business Expo</h3>
+                <p>Meet local businesses and learn about services available throughout the community.</p>
+                <p><strong>Date:</strong> September 25</p>
+            </div>
+
+            <div class="event">
+                <h3>Chamber Networking Night</h3>
+                <p>Connect with business owners and community members.</p>
+                <p><strong>Date:</strong> October 3</p>
+            </div>
+        </section>
+
+        <!-- CURRENT WEATHER -->
+        <section class="card weather">
+            <h2>Current Weather</h2>
+
+            <div class="current-weather">
+                <img id="weather-icon"
+                     src="images/weather-placeholder.webp"
+                     alt="Current weather"
+                     width="80"
+                     height="80">
+
+                <div>
+                    <p><strong><span id="temperature">--</span>°F</strong></p>
+                    <p id="description">Weather unavailable</p>
+                    <p>High: <span id="high">--</span>°F</p>
+                    <p>Low: <span id="low">--</span>°F</p>
+                    <p>Humidity: <span id="humidity">--</span>%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORECAST -->
+        <section class="card forecast">
+            <h2>Weather Forecast</h2>
+
+            <p>Today: <strong><span id="today-temp">--</span>°F</strong></p>
+            <p>Tomorrow: <strong><span id="tomorrow-temp">--</span>°F</strong></p>
+            <p>
+                <span id="day-three-name">Day 3</span>:
+                <strong><span id="day-three-temp">--</span>°F</strong>
+            </p>
+        </section>
+
+    </section>
+
+    <!-- MEMBER SPOTLIGHTS -->
+    <section class="spotlight-section">
+        <h2>Member Spotlights</h2>
+
+        <div id="spotlights" class="spotlight-grid">
+            <!-- JavaScript inserts businesses here -->
+        </div>
+    </section>
+
+</main>
+
+<footer>
+
+    <div>
+        <strong>Chamber of Commerce</strong>
+        <p>123 Main Street</p>
+        <p>Community, UT 00000</p>
+        <p>info@chamber.org</p>
+        <p>(000) 000-0000</p>
+    </div>
+
+    <div class="social-links">
+        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+
+    <div>
+        <p>WDD231 Class Project</p>
+        <p>Adam Phillips</p>
+        <p>&copy; <span id="currentyear"></span> Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+
+</footer>
+
+</body>
+</html>
