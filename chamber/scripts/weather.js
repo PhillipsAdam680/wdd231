@@ -1,35 +1,22 @@
-const apiKey = "YOUR_API_KEY_HERE";
+const apiKey = "bbc76749331ec92145881aa77e7657aa";
 
-// Replace these coordinates with the Chamber's actual location.
-const latitude = 37.13;
-const longitude = -113.51;
+const latitude = 40.39;
+const longitude = -111.85;
 
-const currentURL =
-    `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
-
-const forecastURL =
-    `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 
 async function getWeather() {
-    try {
-        const response = await fetch(currentURL);
+    const response = await fetch(url);
+    const data = await response.json();
 
-        if (!response.ok) {
-            throw Error(await response.text());
-        }
+    console.log(data);
 
-        const data = await response.json();
-
-        displayCurrentWeather(data);
-
-    } catch (error) {
-        console.error("Current weather error:", error);
-    }
-}
-
-function displayCurrentWeather(data) {
     document.querySelector("#temperature").textContent =
         Math.round(data.main.temp);
+
+    document.querySelector("#description").textContent =
+        data.weather[0].description;
 
     document.querySelector("#high").textContent =
         Math.round(data.main.temp_max);
@@ -40,69 +27,61 @@ function displayCurrentWeather(data) {
     document.querySelector("#humidity").textContent =
         data.main.humidity;
 
-    const description = data.weather[0].description;
-
-    document.querySelector("#description").textContent =
-        description
-            .split(" ")
-            .map(word =>
-                word.charAt(0).toUpperCase() + word.slice(1)
-            )
-            .join(" ");
-
-    const icon = document.querySelector("#weather-icon");
-
-    icon.src =
-        `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-
-    icon.alt = description;
-}
+    document.querySelector("#today-temp").textContent =
+        Math.round(data.main.temp);
+    }
 
 async function getForecast() {
-    try {
-        const response = await fetch(forecastURL);
+    const response = await fetch(forecastUrl);
+    const data = await response.json();
 
-        if (!response.ok) {
-            throw Error(await response.text());
-        }
+    // Get tomorrow
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
 
-        const data = await response.json();
+    // Get the day after tomorrow
+    const dayThree = new Date();
+    dayThree.setDate(dayThree.getDate() + 2);
 
-        displayForecast(data);
+    // Convert dates to YYYY-MM-DD
+    const tomorrowDate =
+        tomorrow.toISOString().split("T")[0];
 
-    } catch (error) {
-        console.error("Forecast error:", error);
-    }
-}
+    const dayThreeDate =
+        dayThree.toISOString().split("T")[0];
 
-function displayForecast(data) {
-
-    // OpenWeatherMap provides forecasts every three hours.
-    // Noon readings provide a simple daily forecast.
-    const dailyForecasts = data.list.filter(item =>
-        item.dt_txt.includes("12:00:00")
+    // Find the noon forecast for tomorrow
+    const tomorrowForecast = data.list.find(item =>
+        item.dt_txt.includes(`${tomorrowDate} 12:00:00`)
     );
 
-    if (dailyForecasts.length >= 3) {
+    // Find the noon forecast for day three
+    const dayThreeForecast = data.list.find(item =>
+        item.dt_txt.includes(`${dayThreeDate} 12:00:00`)
+    );
 
-        document.querySelector("#today-temp").textContent =
-            Math.round(dailyForecasts[0].main.temp);
-
+    // Display tomorrow's temperature
+    if (tomorrowForecast) {
         document.querySelector("#tomorrow-temp").textContent =
-            Math.round(dailyForecasts[1].main.temp);
-
-        document.querySelector("#day-three-temp").textContent =
-            Math.round(dailyForecasts[2].main.temp);
-
-        const thirdDate =
-            new Date(dailyForecasts[2].dt_txt);
-
-        document.querySelector("#day-three-name").textContent =
-            thirdDate.toLocaleDateString("en-US", {
-                weekday: "long"
-            });
+            Math.round(tomorrowForecast.main.temp);
     }
+
+    // Display day three's temperature
+    if (dayThreeForecast) {
+        document.querySelector("#day-three-temp").textContent =
+            Math.round(dayThreeForecast.main.temp);
+    }
+
+    // Get the actual weekday name
+    const dayThreeName =
+        dayThree.toLocaleDateString("en-US", {
+            weekday: "long"
+        });
+
+    document.querySelector("#day-three-name").textContent =
+        dayThreeName;
 }
 
-getWeather();
+
 getForecast();
+getWeather();
