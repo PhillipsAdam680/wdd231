@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Directory | Lehi Area Chamber of Commerce</title>
+
+    <meta name="description" content="Explore businesses and organizations that are members of the Lehi Area Chamber of Commerce.">
+    <meta name="author" content="Adam Phillips">
+
+    <meta property="og:title" content="Lehi Area Chamber of Commerce">
+    <meta property="og:description" content="Discover local businesses and Chamber of Commerce members in the Lehi, Utah area.">
+    <meta property="og:image" content="https://PhillipsAdam680.github.io/wdd231/chamber/images/custom_logo.jpg">
+    <meta property="og:url" content="https://PhillipsAdam680.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+    <div class="site-brand">
+        <img src="images/custom_logo.jpg"
+             alt="Chamber of Commerce logo"
+             width="75"
+             height="75">
+
+        <div>
+            <span>Chamber of Commerce</span>
+            <p>Supporting Our Community</p>
+        </div>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+
+    <nav id="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+</header>
+
+<main class="join-main">
+    <h1>Join the Chamber</h1>
+
+    <div class="join-container">
+
+        <section class="application">
+            <h2>Membership Application</h2>
+
+            <form method="get" action="thankyou.html">
+
+                <label>
+                    First Name
+                    <input type="text" name="first" required
+                           autocomplete="given-name"
+                           title="Enter your first name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="last" required
+                           autocomplete="family-name"
+                           title="Enter your last name">
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text" name="title"
+                           autocomplete="organization-title"
+                           pattern="[A-Za-z\s\-]{7,}"
+                           title="Enter at least 7 letters, spaces, or hyphens">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" required
+                           autocomplete="email"
+                           placeholder="example@email.com"
+                           title="Enter your email address">
+                </label>
+
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="phone" required
+                           autocomplete="tel"
+                           title="Enter your phone number">
+                </label>
+
+                <label>
+                    Business / Organization Name
+                    <input type="text" name="organization" required
+                           autocomplete="organization"
+                           title="Enter your organization name">
+                </label>
+
+                <label>
+                    Membership Level
+                    <select name="membership" required>
+                        <option value="">Select a Membership</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business / Organization Description
+                    <textarea name="description"
+                              title="Describe your organization"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+
+
+        <section class="membership-levels">
+            <h2>Membership Levels</h2>
+
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <p>For nonprofit organizations.</p>
+                <button type="button" id="npButton">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <p>Basic chamber membership benefits.</p>
+                <button type="button" id="bronzeButton">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <p>Additional promotional benefits.</p>
+                <button type="button" id="silverButton">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <p>Our highest membership level.</p>
+                <button type="button" id="goldButton">Learn More</button>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<dialog id="npDialog">
+    <h2>NP Membership</h2>
+    <p>
+        Designed for nonprofit organizations. This membership
+        has no membership fee.
+    </p>
+    <button class="close-dialog">Close</button>
+</dialog>
+
+<dialog id="bronzeDialog">
+    <h2>Bronze Membership</h2>
+    <p>
+        Includes basic chamber membership benefits,
+        networking opportunities, and member resources.
+    </p>
+    <button class="close-dialog">Close</button>
+</dialog>
+
+<dialog id="silverDialog">
+    <h2>Silver Membership</h2>
+    <p>
+        Includes Bronze benefits plus additional advertising,
+        event discounts, and promotional opportunities.
+    </p>
+    <button class="close-dialog">Close</button>
+</dialog>
+
+<dialog id="goldDialog">
+    <h2>Gold Membership</h2>
+    <p>
+        Includes our highest level of chamber benefits,
+        advertising opportunities, event discounts,
+        and featured business promotions.
+    </p>
+    <button class="close-dialog">Close</button>
+</dialog>
+
+</body>
+
+<footer>
+
+    <div>
+        <strong>Chamber of Commerce</strong>
+        <p>123 Main Street</p>
+        <p>Community, UT 00000</p>
+        <p>info@chamber.org</p>
+        <p>(000) 000-0000</p>
+    </div>
+
+    <div class="social-links">
+        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+
+    <div>
+        <p>WDD231 Class Project</p>
+        <p>Adam Phillips</p>
+        <p>&copy; <span id="currentyear"></span> Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+
+</footer>
+
+</body>
+</html>

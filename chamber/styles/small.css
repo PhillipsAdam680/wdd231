@@ -307,3 +307,85 @@ footer {
 
     text-align: center;
 }
+
+/* JOIN PAGE */
+
+.join-main {
+    padding: 1rem;
+}
+
+.join-main h1 {
+    text-align: center;
+}
+
+.join-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.application,
+.membership-levels {
+    padding: 1rem;
+}
+
+.application form {
+    display: grid;
+    gap: 1rem;
+}
+
+.application label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: bold;
+}
+
+.application input,
+.application select,
+.application textarea {
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.application textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.application input[type="submit"] {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.membership-levels {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.membership-card button {
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+
+dialog {
+    padding: 2rem;
+    border: none;
+    border-radius: 8px;
+    max-width: 450px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
