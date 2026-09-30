@@ -32,24 +32,36 @@
 
 <body>
     <header>
-    <div class="site-brand">
-        <img src="images/custom_logo.jpg"
-             alt="Chamber of Commerce logo"
-             width="75"
-             height="75">
+<div class="header-content">
+        <a href="index.html" class="site-brand">
+            <img
+                src="images/custom_logo.jpg"
+                alt="Washington Area Chamber of Commerce logo"
+                width="80"
+                height="80"
+            >
 
-        <div>
-            <span>Chamber of Commerce</span>
-            <p>Supporting Our Community</p>
-        </div>
+            <div>
+                <span class="site-name">Lehi Area</span>
+                <span class="site-subtitle">Chamber of Commerce</span>
+            </div>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
     </div>
 
-    <button id="menu" aria-label="Open navigation menu"></button>
-
+    
     <nav id="navigation">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
+        <a href="join.html" class="active">Join</a>
         <a href="discover.html">Discover</a>
     </nav>
 </header>
