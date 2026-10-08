@@ -57,3 +57,49 @@
     }
 }
 
+
+/* DISCOVER PAGE - TABLET */
+
+@media screen and (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .discover-card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+}
+
+/* Hover effects only for devices with a mouse */
+@media (min-width: 641px) and (hover: hover) {
+  .discover-card figure {
+    overflow: hidden;
+  }
+
+  .discover-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
+/* DISCOVER PAGE - DESKTOP */
+
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      "card1 card1 card2"
+      "card3 card4 card5"
+      "card6 card7 card7"
+      "card8 card8 card8";
+  }
+}
+
+
