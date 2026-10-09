@@ -4,35 +4,35 @@ export const places = [
     name: "Museum of Natural Curiosity",
     address: "3605 N Garden Drive, Lehi, UT 84048",
     description: "A family-friendly museum featuring interactive exhibits about science, nature, and exploration.",
-    image: "natural-curiosity.webp",
+    image: "curiositymuseum.webp",
     url: "https://thanksgivingpoint.org/attractions-tickets/museum-of-natural-curiosity/"
   },
   {
     name: "Museum of Ancient Life",
     address: "2929 N Thanksgiving Way, Lehi, UT 84048",
     description: "Explore dinosaur skeletons, prehistoric discoveries, and hands-on exhibits about ancient life.",
-    image: "ancient-life.webp",
+    image: "ancientlife.webp",
     url: "https://thanksgivingpoint.org/attractions-tickets/museum-of-ancient-life/"
   },
   {
     name: "Butterfly Biosphere",
     address: "3003 N Thanksgiving Way, Lehi, UT 84048",
     description: "Discover colorful butterflies, insects, and educational exhibits about the natural world.",
-    image: "butterfly.webp",
+    image: "biosphere.webp",
     url: "https://thanksgivingpoint.org/attractions-tickets/butterfly-biosphere/"
   },
   {
     name: "Ashton Gardens",
     address: "3900 N Garden Drive, Lehi, UT 84048",
     description: "Enjoy beautiful themed gardens, walking paths, seasonal flowers, and peaceful scenery.",
-    image: "ashton-gardens.webp",
+    image: "ashtongardens.webp",
     url: "https://thanksgivingpoint.org/attractions-tickets/ashton-gardens/"
   },
   {
     name: "Hutchings Museum",
     address: "55 N Center Street, Lehi, UT 84043",
     description: "Learn about local history, natural history, and cultural artifacts from Utah and beyond.",
-    image: "hutchings.webp",
+    image: "hutchingsmuseum.webp",
     url: "https://johnhutchingsmuseum.org/"
   },
   {
@@ -46,14 +46,14 @@ export const places = [
     name: "Lehi Historical Society",
     address: "99 W Main Street, Lehi, UT 84043",
     description: "Discover the history of Lehi and the stories of the people who helped build the community.",
-    image: "historical-society.webp",
+    image: "lehisociety.webp",
     url: "https://www.lehihistory.com/"
   },
   {
-    name: "Lehi DUP Museum",
-    address: "50 N Center Street, Lehi, UT 84043",
-    description: "Explore artifacts and exhibits that preserve the history of Lehi's early pioneer settlers.",
-    image: "dup-museum.webp",
-    url: "https://www.google.com/maps/search/?api=1&query=Lehi+DUP+Museum+Utah"
+    name: "Lehi Curiosity Farms",
+    address: "2502 W Wildflower Lane, Lehi, UT 84048",
+    description: "Explore the science, technology, and advancements of a real working farm",
+    image: "curiosityfarms.webp",
+    url: "https://thanksgivingpoint.org/attractions-tickets/curiosity-farms/"
   }
 ];
