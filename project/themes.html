@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore popular LEGO themes including Star Wars, City, Technic, and Harry Potter.">
+    <meta name="author" content="Adam Phillips">
+
+    <title>LEGO Themes | LEGO Builder's Guide</title>
+
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                LEGO Builder's Guide
+            </a>
+
+            <button id="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="themes.html"
+                           class="active"
+                           aria-current="page">Themes</a></li>
+                    <li><a href="beginner.html">Beginner's Guide</a></li>
+                    <li><a href="beginner.html#collecting">Collecting Tips</a></li>
+                    <li><a href="homepage.html">Featured Builds</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Explore LEGO Themes</h1>
+            <p>
+                LEGO offers many different themes for builders
+                of all interests and experience levels.
+                Explore some popular themes below.
+            </p>
+        </section>
+
+        <section class="theme-list">
+            <h2>Popular Themes</h2>
+
+            <div class="theme-grid">
+                <article class="theme-card">
+                    <h3>LEGO Star Wars</h3>
+                    <p>
+                        Build spaceships, vehicles, and locations
+                        inspired by the Star Wars universe.
+                    </p>
+                    <p>
+                        This theme is popular with fans who enjoy
+                        science fiction and collecting minifigures.
+                    </p>
+                </article>
+
+                <article class="theme-card">
+                    <h3>LEGO City</h3>
+                    <p>
+                        Create everyday scenes with buildings,
+                        vehicles, police stations, fire stations,
+                        and other city locations.
+                    </p>
+                </article>
+
+                <article class="theme-card">
+                    <h3>LEGO Technic</h3>
+                    <p>
+                        Explore detailed mechanical builds
+                        featuring moving parts, gears,
+                        and realistic vehicles.
+                    </p>
+                </article>
+
+                <article class="theme-card">
+                    <h3>LEGO Harry Potter</h3>
+                    <p>
+                        Recreate magical locations and scenes
+                        from the Harry Potter stories.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <h2>Choosing a LEGO Theme</h2>
+            <p>
+                When choosing a LEGO theme, consider your
+                interests, available space, and budget.
+                Some themes focus on display models,
+                while others offer more interactive builds.
+            </p>
+
+            <a href="beginner.html" class="button">
+                Visit Beginner's Guide
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            LEGO Builder's Guide</p>
+        <p>WDD 231 Individual Project</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

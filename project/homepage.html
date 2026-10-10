@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore LEGO themes, building guides, and collecting tips.">
+    <meta name="author" content="Adam Phillips">
+
+    <title>Home | LEGO Builder's Guide</title>
+
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                LEGO Builder's Guide
+            </a>
+
+            <button id="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html"
+                           class="active"
+                           aria-current="page">Home</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="beginner.html">Beginner's Guide</a></li>
+                    <li><a href="beginner.html#collecting">Collecting Tips</a></li>
+                    <li><a href="#featured">Featured Builds</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to LEGO Builder's Guide</h1>
+                <p>
+                    Explore the world of LEGO building and collecting.
+                    Discover popular themes, learn helpful building
+                    tips, and find inspiration for your next creation.
+                </p>
+                <a href="beginner.html" class="button">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/lego-hero.webp"
+                     alt="A colorful LEGO brick creation"
+                     width="600" height="400">
+            </div>
+        </section>
+
+        <!-- Popular Themes -->
+        <section class="popular-themes">
+            <h2>Popular LEGO Themes</h2>
+            <p>Discover some popular LEGO themes.</p>
+
+            <div class="theme-grid">
+                <article class="theme-card">
+                    <img src="images/star-wars.webp"
+                         alt="LEGO Star Wars set"
+                         loading="lazy"
+                         width="300" height="200">
+                    <h3>Star Wars</h3>
+                    <p>Explore LEGO sets from a galaxy far away.</p>
+                </article>
+
+                <article class="theme-card">
+                    <img src="images/city.webp"
+                         alt="LEGO City set"
+                         loading="lazy"
+                         width="300" height="200">
+                    <h3>City</h3>
+                    <p>Build cities, vehicles, and everyday adventures.</p>
+                </article>
+
+                <article class="theme-card">
+                    <img src="images/technic.webp"
+                         alt="LEGO Technic set"
+                         loading="lazy"
+                         width="300" height="200">
+                    <h3>Technic</h3>
+                    <p>Discover detailed vehicles and mechanical builds.</p>
+                </article>
+
+                <article class="theme-card">
+                    <img src="images/harry-potter.webp"
+                         alt="LEGO Harry Potter set"
+                         loading="lazy"
+                         width="300" height="200">
+                    <h3>Harry Potter</h3>
+                    <p>Explore magical locations and characters.</p>
+                </article>
+            </div>
+
+            <a href="themes.html" class="button">
+                Explore Themes
+            </a>
+        </section>
+
+        <!-- Guides -->
+        <section class="guides">
+            <article class="guide-card">
+                <h2>Beginner's Guide</h2>
+                <img src="images/beginner.webp"
+                     alt="LEGO bricks ready to be assembled"
+                     loading="lazy"
+                     width="400" height="250">
+                <p>
+                    New to LEGO building? Learn how to get started,
+                    choose sets, and improve your building skills.
+                </p>
+                <a href="beginner.html" class="button">
+                    Get Started
+                </a>
+            </article>
+
+            <article class="guide-card">
+                <h2>Collecting Tips</h2>
+                <img src="images/collecting.webp"
+                     alt="A collection of LEGO sets"
+                     loading="lazy"
+                     width="400" height="250">
+                <p>
+                    Learn how to organize, display, and expand
+                    your LEGO collection.
+                </p>
+                <a href="beginner.html#collecting" class="button">
+                    Read Tips
+                </a>
+            </article>
+        </section>
+
+        <!-- Featured Builds -->
+        <section id="featured" class="featured-builds">
+            <h2>Featured LEGO Builds</h2>
+            <p>Find inspiration for your next LEGO project.</p>
+
+            <div class="build-grid">
+                <article class="build-card">
+                    <img src="images/build-one.webp"
+                         alt="A custom LEGO spaceship"
+                         loading="lazy"
+                         width="350" height="230">
+                    <h3>Space Builds</h3>
+                    <p>Creative spaceships and space-themed designs.</p>
+                </article>
+
+                <article class="build-card">
+                    <img src="images/build-two.webp"
+                         alt="A custom LEGO building"
+                         loading="lazy"
+                         width="350" height="230">
+                    <h3>City Builds</h3>
+                    <p>Unique buildings and city layouts.</p>
+                </article>
+
+                <article class="build-card">
+                    <img src="images/build-three.webp"
+                         alt="A custom LEGO vehicle"
+                         loading="lazy"
+                         width="350" height="230">
+                    <h3>Vehicle Builds</h3>
+                    <p>Custom cars, trucks, and other vehicles.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            LEGO Builder's Guide</p>
+        <p>WDD 231 Individual Project</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
