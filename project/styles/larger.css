@@ -1,0 +1,56 @@
+
+/* =========================
+   Desktop Styling
+   768px and Larger
+========================= */
+
+@media screen and (min-width: 768px) {
+
+    /* Header and Navigation */
+
+    .logo img {
+        width: 220px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    /* Home Page */
+
+    .theme-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .guides {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .build-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Interior Pages */
+
+    .guide-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* LEGO Wish List */
+
+    #wishlist-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+}
