@@ -45,11 +45,27 @@ header {
     flex-wrap: wrap;
 }
 
+/* Website Logo */
+
 .logo {
-    color: var(--light);
-    font-size: 1.3rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+
+.logo img {
+    display: block;
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Desktop Logo */
+
+@media screen and (min-width: 768px) {
+    .logo img {
+        width: 220px;
+    }
 }
 
 #menu-button {
