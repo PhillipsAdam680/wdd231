@@ -1,0 +1,33 @@
+
+{
+  "themes": [
+    {
+      "id": "star-wars",
+      "name": "LEGO Star Wars",
+      "category": "Licensed",
+      "description": "Build starships, vehicles, and locations inspired by the Star Wars universe.",
+      "recommendedFor": "Star Wars fans and minifigure collectors"
+    },
+    {
+      "id": "city",
+      "name": "LEGO City",
+      "category": "Original",
+      "description": "Build cities, emergency vehicles, trains, and everyday adventures.",
+      "recommendedFor": "Beginners and creative city builders"
+    },
+    {
+      "id": "technic",
+      "name": "LEGO Technic",
+      "category": "Original",
+      "description": "Explore detailed vehicles and mechanical models featuring gears and moving parts.",
+      "recommendedFor": "Builders interested in engineering and vehicles"
+    },
+    {
+      "id": "harry-potter",
+      "name": "LEGO Harry Potter",
+      "category": "Licensed",
+      "description": "Recreate magical locations and scenes from the Harry Potter stories.",
+      "recommendedFor": "Harry Potter fans and collectors"
+    }
+  ]
+}

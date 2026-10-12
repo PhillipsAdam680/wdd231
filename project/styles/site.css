@@ -298,3 +298,79 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+
+/* LEGO Theme Filter */
+
+#theme-filter {
+    display: block;
+    margin: 0.75rem 0 1.5rem;
+    padding: 0.75rem;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    font: inherit;
+    max-width: 100%;
+}
+
+/* LEGO Wish List */
+
+#wishlist-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+#set-name {
+    width: 100%;
+    max-width: 450px;
+    padding: 0.75rem;
+    font: inherit;
+    border: 1px solid #777777;
+    border-radius: 5px;
+}
+
+#wishlist-items {
+    list-style: none;
+    padding: 0;
+}
+
+#wishlist-items li {
+    background-color: #f5f5f5;
+    border-left: 5px solid var(--primary);
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    overflow-wrap: anywhere;
+}
+
+.remove-button {
+    background-color: var(--dark);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.remove-button:hover {
+    background-color: var(--primary);
+}
+
+#wishlist-message {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    #wishlist-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+}

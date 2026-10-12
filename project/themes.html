@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/site.css">
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/themes.js" type="module"></script>
     
     <meta property="og:title" content="Lego Builders Guide">
-    <meta property="og:description" content="A guide to entering the lego hooby and community">
+   <meta property="og:description" content="A beginners guide to entering the Lego hobby and community">
     <meta property="og:image" content="https://PhillipsAdam680.github.io/wdd231/project/images/sitelogo.webp">
     <meta property="og:url" content="https://PhillipsAdam680.github.io/wdd231/project/">
     <link rel="icon" href="favicon.ico">
@@ -64,49 +65,21 @@
             </p>
         </section>
 
+
         <section class="theme-list">
-            <h2>Popular Themes</h2>
+            <h2>Popular LEGO Themes</h2>
 
-            <div class="theme-grid">
-                <article class="theme-card">
-                    <h3>LEGO Star Wars</h3>
-                    <p>
-                        Build spaceships, vehicles, and locations
-                        inspired by the Star Wars universe.
-                    </p>
-                    <p>
-                        This theme is popular with fans who enjoy
-                        science fiction and collecting minifigures.
-                    </p>
-                </article>
+            <label for="theme-filter">Filter LEGO Themes:</label>
 
-                <article class="theme-card">
-                    <h3>LEGO City</h3>
-                    <p>
-                        Create everyday scenes with buildings,
-                        vehicles, police stations, fire stations,
-                        and other city locations.
-                    </p>
-                </article>
+            <select id="theme-filter">
+                <option value="all">All Themes</option>
+                <option value="Original">Original LEGO Themes</option>
+                <option value="Licensed">Licensed LEGO Themes</option>
+            </select>
 
-                <article class="theme-card">
-                    <h3>LEGO Technic</h3>
-                    <p>
-                        Explore detailed mechanical builds
-                        featuring moving parts, gears,
-                        and realistic vehicles.
-                    </p>
-                </article>
-
-                <article class="theme-card">
-                    <h3>LEGO Harry Potter</h3>
-                    <p>
-                        Recreate magical locations and scenes
-                        from the Harry Potter stories.
-                    </p>
-                </article>
-            </div>
+            <div id="theme-container" class="theme-grid"></div>
         </section>
+
 
         <section class="page-section">
             <h2>Choosing a LEGO Theme</h2>

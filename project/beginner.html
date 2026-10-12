@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/site.css">
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/collection.js" type="module"></script>
 
     <meta property="og:title" content="Lego Builders Guide">
-    <meta property="og:description" content="A guide to entering the lego hooby and community">
+    <meta property="og:description" content="A beginners guide to entering the Lego hobby and community">
     <meta property="og:image" content="https://PhillipsAdam680.github.io/wdd231/project/images/sitelogo.webp">
     <meta property="og:url" content="https://PhillipsAdam680.github.io/wdd231/project/">
     <link rel="icon" href="favicon.ico">
@@ -156,6 +157,40 @@
                 Explore LEGO Themes
             </a>
         </section>
+
+
+        <section class="page-section">
+            <h2>My LEGO Wish List</h2>
+
+            <p>
+                Keep track of LEGO sets you would like
+                to add to your collection.
+            </p>
+
+            <form id="wishlist-form">
+                <label for="set-name">LEGO Set Name:</label>
+
+                <input
+                    type="text"
+                    id="set-name"
+                    name="set-name"
+                    placeholder="Example: LEGO Star Wars X-Wing"
+                    maxlength="100"
+                    required
+                >
+
+                <button type="submit" class="button">
+                    Add to Wish List
+                </button>
+            </form>
+
+            <h3>Saved LEGO Sets</h3>
+
+            <ul id="wishlist-items"></ul>
+
+            <p id="wishlist-message" role="status"></p>
+        </section>
+
     </main>
 
     <footer>
