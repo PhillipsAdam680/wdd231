@@ -23,11 +23,11 @@
       "recommendedFor": "Builders interested in engineering and vehicles"
     },
     {
-      "id": "harry-potter",
-      "name": "LEGO Harry Potter",
+      "id": "minecraft",
+      "name": "LEGO Minecraft",
       "category": "Licensed",
-      "description": "Recreate magical locations and scenes from the Harry Potter stories.",
-      "recommendedFor": "Harry Potter fans and collectors"
+      "description": "Recreate iconic locations wtih characters and builds from the minecraft world.",
+      "recommendedFor": "Ideal for gamers and fans of Minecraft"
     }
   ]
 }
